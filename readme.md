@@ -1,7 +1,7 @@
 # Articalc
 Articalc：Steem客户端软件 / 碧蓝航线官方百合社区
 
-官方实例：[https://openclipsis.top](https://openclipsis.top/)
+官方实例（由OpenMix运行）：[https://openclipsis.top](https://openclipsis.top/)
 
 ## 自行搭建
 1. Docker Compose 部署。

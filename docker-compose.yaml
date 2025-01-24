@@ -1,0 +1,15 @@
+services:
+  backend:
+    image: node:latest
+    volumes:
+      - ./backend:/var/server
+    command: bash -c /var/server/migrate.sh
+  frontend:
+    image: nginx:latest
+    links:
+      - backend
+    ports:
+      - 80:80
+    volumes:
+      - ./www:/www
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:o
